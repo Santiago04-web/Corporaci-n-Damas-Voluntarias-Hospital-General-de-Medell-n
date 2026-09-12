@@ -33,10 +33,11 @@ export const AboutSection: React.FC = () => {
               <p className="text-lg sm:text-xl text-[#164E3D] font-serif-title font-medium leading-relaxed italic">
                 "{ABOUT_CONTENT.text}"
               </p>
-              <div className="flex items-center justify-between pt-2 border-t border-[#E79E85]/20 text-xs text-gray-600 font-medium">
-                <span>{OFFICIAL_INFO.razonSocial}</span>
-                <span className="text-[#164E3D] font-semibold">NIT {OFFICIAL_INFO.nit}</span>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 pt-3 border-t border-[#E79E85]/20 text-xs text-gray-700 font-medium">
+                <span><strong>Razón Social:</strong> {OFFICIAL_INFO.razonSocial}</span>
+                <span className="text-[#164E3D] font-semibold"><strong>NIT:</strong> {OFFICIAL_INFO.nit}</span>
               </div>
+
             </div>
 
             {/* 3 Pillar Cards: Solidaridad, Servicio, Humanidad */}

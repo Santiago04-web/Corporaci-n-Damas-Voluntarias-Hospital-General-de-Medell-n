@@ -37,9 +37,11 @@ export const Footer: React.FC = () => {
               Una entidad sin ánimo de lucro orientada al servicio, la solidaridad y el acompañamiento de las personas y sus familias.
             </p>
 
-            <div className="inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-[#E79E85]">
-              NIT {OFFICIAL_INFO.nit}
+            <div className="space-y-1 text-xs text-[#E79E85] bg-white/10 p-3.5 rounded-xl border border-white/20">
+              <p><strong>Razón Social:</strong> {OFFICIAL_INFO.razonSocial}</p>
+              <p><strong>NIT:</strong> {OFFICIAL_INFO.nit}</p>
             </div>
+
           </div>
 
           {/* Col 2: Navigation Links */}
