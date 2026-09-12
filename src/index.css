@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-institutional: #164E3D;
+    --color-institutional-dark: #11382C;
+    --color-peach: #E79E85;
+    --color-peach-light: #FDF3EF;
+    --color-cream: #FAF7F2;
+    --color-charcoal: #232F2C;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #232F2C;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom Utilities */
+.bg-cream-soft {
+  background-color: #FAF7F2;
+}
+
+.bg-institutional {
+  background-color: #164E3D;
+}
+
+.bg-institutional-dark {
+  background-color: #11382C;
+}
+
+.text-institutional {
+  color: #164E3D;
+}
+
+.text-peach {
+  color: #E79E85;
+}
+
+.bg-peach {
+  background-color: #E79E85;
+}
+
+.bg-peach-light {
+  background-color: #FDF3EF;
+}
+
+.border-peach-subtle {
+  border-color: rgba(231, 158, 133, 0.3);
+}
+
+.shadow-warm {
+  box-shadow: 0 10px 30px -10px rgba(22, 78, 61, 0.08);
+}
+
+.shadow-warm-hover:hover {
+  box-shadow: 0 20px 40px -15px rgba(22, 78, 61, 0.15);
+}
+
+/* Glassmorphism */
+.glass-header {
+  background: rgba(250, 247, 242, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
