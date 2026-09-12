@@ -33,12 +33,25 @@ export const AboutSection: React.FC = () => {
               <p className="text-lg sm:text-xl text-[#164E3D] font-serif-title font-medium leading-relaxed italic">
                 "{ABOUT_CONTENT.text}"
               </p>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 pt-3 border-t border-[#E79E85]/20 text-xs text-gray-700 font-medium">
-                <span><strong>Razón Social:</strong> {OFFICIAL_INFO.razonSocial}</span>
-                <span className="text-[#164E3D] font-semibold"><strong>NIT:</strong> {OFFICIAL_INFO.nit}</span>
-              </div>
-
             </div>
+
+            {/* Información Institucional Block */}
+            <div className="p-6 rounded-2xl bg-white border-2 border-[#164E3D]/20 shadow-sm space-y-3">
+              <h4 className="text-xs font-bold text-[#164E3D] uppercase tracking-wider border-b border-[#E79E85]/30 pb-2">
+                Información Institucional
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-[#232F2C]">
+                <div>
+                  <span className="text-gray-500 font-medium block mb-0.5">Razón social:</span>
+                  <strong className="text-xs sm:text-sm text-[#164E3D] font-bold block">{OFFICIAL_INFO.razonSocial}</strong>
+                </div>
+                <div>
+                  <span className="text-gray-500 font-medium block mb-0.5">NIT:</span>
+                  <strong className="text-xs sm:text-sm text-[#164E3D] font-bold block">{OFFICIAL_INFO.nit}</strong>
+                </div>
+              </div>
+            </div>
+
 
             {/* 3 Pillar Cards: Solidaridad, Servicio, Humanidad */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">

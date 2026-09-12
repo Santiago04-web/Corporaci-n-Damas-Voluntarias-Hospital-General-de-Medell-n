@@ -37,10 +37,22 @@ export const Footer: React.FC = () => {
               Una entidad sin ánimo de lucro orientada al servicio, la solidaridad y el acompañamiento de las personas y sus familias.
             </p>
 
-            <div className="space-y-1 text-xs text-[#E79E85] bg-white/10 p-3.5 rounded-xl border border-white/20">
-              <p><strong>Razón Social:</strong> {OFFICIAL_INFO.razonSocial}</p>
-              <p><strong>NIT:</strong> {OFFICIAL_INFO.nit}</p>
+            <div className="p-5 rounded-2xl bg-white/10 border border-white/20 text-xs space-y-3">
+              <h5 className="text-xs font-bold text-[#E79E85] uppercase tracking-wider">
+                Información Legal del Negocio
+              </h5>
+              
+              <div className="space-y-1.5 text-gray-100 font-medium">
+                <p className="font-bold text-sm text-white">{OFFICIAL_INFO.razonSocial}</p>
+                <p className="text-[#E79E85] font-semibold">NIT {OFFICIAL_INFO.nit}</p>
+                <p className="pt-1">{OFFICIAL_INFO.direccion}</p>
+                <p>{OFFICIAL_INFO.ciudad}</p>
+                <p className="pt-1">{OFFICIAL_INFO.telefono}</p>
+                <p className="break-all">{OFFICIAL_INFO.correo}</p>
+                <p className="text-[#E79E85]">{OFFICIAL_INFO.sitioWebDisplay}</p>
+              </div>
             </div>
+
 
           </div>
 
